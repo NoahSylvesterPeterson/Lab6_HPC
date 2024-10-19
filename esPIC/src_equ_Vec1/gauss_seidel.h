@@ -26,7 +26,7 @@
   //  ||
   //  ==
 
-void GS_or_Jacobi(int max_iter , VD RHS, VD &Solution , mpiInfo &myMPI , int GSorJacobi, int &finalIterCount, double nrealx,double coeff1, double coeffx, double coeffy)
+void GS_or_Jacobi(int max_iter , VD RHS, VD &Solution , mpiInfo &myMPI , int GSorJacobi, int &finalIterCount, double nrealx)
   {
     int converged, it_converged;
     int iter = 0;
@@ -78,19 +78,28 @@ void GS_or_Jacobi(int max_iter , VD RHS, VD &Solution , mpiInfo &myMPI , int GSo
 	// ----------------------------------------------
 	// (3) One Jacobi Iteration
 	// ----------------------------------------------
-	
+	//cout << "coefx x: " << coeffx * 1.<< endl;
 	rLOOP
 	  {
 
-	    
+	    int cond = (1 < r  % (nRealx+2))*(r  % (nRealx+2)<=nRealx+1)* (r < nField -nRealx-2)* (nRealx+2 < r) ;
 	    // (3.1) Compute new guess for row r
 
 	    newval = b[r];
+		int indx[4] = {(r+1)*cond, (r-1)*cond, (r+nRealx+2)*cond, (r-nRealx-2)*cond};
+		//double coefs [4] = {coeffx, coeffx, coeffy, coeffy};
+		//for ( int c = 2 ; c <= bandwidth ; ++c ) if(coefs[c-2] != Acoef[r][c]) cout<< coefs[c-2] << " : "<< Acoef[r][c] <<endl;;
+		for ( int c = 2 ; c <= bandwidth ; ++c ) newval -=  Acoef[r][c] * Solution[((r+1)*(c==2) + (r-1)*(c==3) + (r+nRealx+2)*(c==4) + (r-nRealx-2)*(c==5))*cond];
 	    //for ( int c = 2 ; c <= bandwidth ; ++c ) newval -=  Acoef[r][c] * Solution[Jcoef[r][c]];
-		int cond = (1 < r  % (nRealx+2))*(r  % (nRealx+2)<=nRealx+1)* (r < nField -nRealx-2)* (nRealx+2 < r) ;
-		newval -= coeffx*Solution[(r+1)*cond] - coeffx*Solution[(r-1)*cond]; - coeffy*Solution[(r-nRealx-2)*cond] - coeffy*Solution[(r+nRealx+2)*cond];
-	    //newval /= Acoef[r][1];
-		newval /=  coeff1 ;
+		
+		// if ((r+1)*cond != Jcoef[r][2]) cout << "2 "<< (r+1)*cond << " : " << Jcoef[r][2] <<endl;
+		// if ((r-1)*cond != Jcoef[r][3]) cout << "3 "<< (r-1)*cond << " : " << Jcoef[r][3] <<endl;
+		// if ((r+nRealx+2)*cond != Jcoef[r][4]) cout << "4 "<< (r+nRealx+2)*cond << " : " << Jcoef[r][4] <<endl;
+		// if ((r-nRealx-2)*cond != Jcoef[r][5]) cout << "5 "<< (r-nRealx-2)*cond << " : " << Jcoef[r][5] <<endl;
+
+		//newval -= coeffx*Solution[(r+1)*cond] - coeffx*Solution[(r-1)*cond]; - coeffy*Solution[(r-nRealx-2)*cond] - coeffy*Solution[(r+nRealx+2)*cond];
+	    newval /= Acoef[r][1];
+		//newval /=  coeff1 ;
 
 	    // (3.2) Convergence check
 

@@ -144,13 +144,8 @@ int main(int argc, char *argv[])
 
    double timeSinceLastPlot = 0.;
    int latestIterCount;
-   
-   double dx2 = MESH.dx*MESH.dx;
-   double dy2 = MESH.dy*MESH.dy;
-   double nrealx = MESH.nRealx;
-   double coeff1 = 2./dx2 - 2./dy2;
-   double coeffx = 1./dx2;
-   double coeffy = 1./dy2;
+
+   double nrealx = nCellx;
 
    for ( double t = 0. ; t <= tEnd ; t += dt )
      {
@@ -177,7 +172,7 @@ int main(int argc, char *argv[])
 
        MPI_Barrier(MPI_COMM_WORLD);
 
-       MESH.GS_or_Jacobi(5000, MESH.b , MESH.phi , myMPI , 2, latestIterCount,nrealx,coeff1,coeffx,coeffy);
+       MESH.GS_or_Jacobi(5000, MESH.b , MESH.phi , myMPI , 2, latestIterCount,nrealx);
       
        // Plot
  

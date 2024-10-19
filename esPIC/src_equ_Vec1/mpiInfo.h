@@ -342,15 +342,18 @@ class mpiInfo
     tLOOP {  phiRecv_e[t] = 0.; phiRecv_w[t] = 0.; }  // left and right sides
 
     // (2.4)
-    cout << "line 345" <<endl;
-    MPI_Barrier(MPI_COMM_WORLD);
+    //cout << "line 345" <<endl;
+    
+    //MPI_Barrier(MPI_COMM_WORLD);
+    //cout << myPE << endl;
     if ( nei_e >= 0 ){ err = MPI_Irecv(phiRecv_e, county , MPI_DOUBLE , nei_e , tag , MPI_COMM_WORLD , &request); MPI_Wait(&request,&status);}
+    //MPI_Barrier(MPI_COMM_WORLD);
     if ( nei_w >= 0 ){ err = MPI_Irecv(phiRecv_w, county , MPI_DOUBLE , nei_w , tag , MPI_COMM_WORLD , &request); MPI_Wait(&request,&status);}
 
     // (2.5)
-    
+    //MPI_Barrier(MPI_COMM_WORLD);
     tLOOP {  field[ pid(1,t)      ] += phiRecv_w[t];	field[ pid(nRealx,t) ] += phiRecv_e[t];      }  // left and right sides
-    cout << "line 352" <<endl;
+    //cout << "line 352" <<endl;
   }
 
 
