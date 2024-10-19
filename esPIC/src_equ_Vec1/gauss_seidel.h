@@ -26,7 +26,7 @@
   //  ||
   //  ==
 
-void GS_or_Jacobi(int max_iter , VD RHS, VD &Solution , mpiInfo &myMPI , int GSorJacobi, int &finalIterCount,  double nrealx,double coeff1, double coeffx, double coeffy)
+void GS_or_Jacobi(int max_iter , VD RHS, VD &Solution , mpiInfo &myMPI , int GSorJacobi, int &finalIterCount, double nrealx,double coeff1, double coeffx, double coeffy)
   {
     int converged, it_converged;
     int iter = 0;
@@ -78,7 +78,7 @@ void GS_or_Jacobi(int max_iter , VD RHS, VD &Solution , mpiInfo &myMPI , int GSo
 	// ----------------------------------------------
 	// (3) One Jacobi Iteration
 	// ----------------------------------------------
-    int test = 1;
+	
 	rLOOP
 	  {
 
@@ -86,38 +86,11 @@ void GS_or_Jacobi(int max_iter , VD RHS, VD &Solution , mpiInfo &myMPI , int GSo
 	    // (3.1) Compute new guess for row r
 
 	    newval = b[r];
-
-        if(r == test && test < nField +2){
-			cout << " ================ test r = " << test << " ================ "<<endl;
-			cout << "conds:     " 
-            << (1 < r  % (nRealx+2))<< "  "
-            << (r  % (nRealx+2)<=nRealx+1)<< "  "
-			<<  (r < nField -nRealx-2)<< "  "
-            << (nRealx+2 < r)<< endl;
-			int cond = (1 < r  % (nRealx+2))*(r  % (nRealx+2)<=nRealx+1)* (r < nField -nRealx-2)* (nRealx+2 < r) ;
-            cout << "Acefs:     " 
-            << (r+1)*cond<< "  "
-            << (r-1)*cond<< "  "
-            << (r+nRealx+2)*cond<< "  "
-            << (r-nRealx-2)*cond<< endl;
-        }
-        if(r == test && test < nField +2) cout << "sol Jcoef: ";
-		for ( int c = 2 ; c <= bandwidth ; ++c ){
-            if(r == test && test < nField +2) cout << Jcoef[r][c] << "  ";
-            newval -=  Acoef[r][c] * Solution[Jcoef[r][c]];
-        }
-        if(r == test && test < nField +2) cout << endl;
-	    //newval =  - coeffx*Solution[r+1] - coeffx*Solution[r-1]; - coeffy*Solution[r-nRealx-2] - coeffy*Solution[r+nRealx+2]; 
-        if (r == test && test < nField+ 2) test++;
-
-
-
-
-
-
-
-
-	    newval /= -coeff1;
+	    //for ( int c = 2 ; c <= bandwidth ; ++c ) newval -=  Acoef[r][c] * Solution[Jcoef[r][c]];
+		int cond = (1 < r  % (nRealx+2))*(r  % (nRealx+2)<=nRealx+1)* (r < nField -nRealx-2)* (nRealx+2 < r) ;
+		newval -= coeffx*Solution[(r+1)*cond] - coeffx*Solution[(r-1)*cond]; - coeffy*Solution[(r-nRealx-2)*cond] - coeffy*Solution[(r+nRealx+2)*cond];
+	    //newval /= Acoef[r][1];
+		newval /=  coeff1 ;
 
 	    // (3.2) Convergence check
 

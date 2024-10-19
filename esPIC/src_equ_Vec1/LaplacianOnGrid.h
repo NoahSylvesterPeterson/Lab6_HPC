@@ -135,7 +135,7 @@ public:
     
     Acoef.resize(nField+1 ); rLOOP Acoef[r].resize(bandwidth+1);
     Jcoef.resize(nField+1 ); rLOOP Jcoef[r].resize(bandwidth+1);
-    b.resize(nField+1);
+    b.resize(nField+1 );
     phi.resize(nField+1);
 
     rLOOP phi[r] = 0.;
@@ -282,7 +282,6 @@ public:
                                       //    have left this processor and are heading onto
                                       //    another processor.
 
-  
     // -
     // |
     // | Determine which particles are still on this mesh and which have left
@@ -309,6 +308,7 @@ public:
 
 	// The particle is not in the mesh.  Collect this particle into a holding array that will 
 	// be sent to the neighboring processor.
+
 	if ( PTCL.active[k] == -1)
 	  {
 	    if ( iPEnew >= 0 && iPEnew < myMPI.nPEx )
@@ -327,9 +327,10 @@ public:
     // | Give and receive particles to/with other processors
     // |
     // -
+
     myMPI.ParticleExchange( ptcl_send_list , ptcl_send_PE , PTCL);
-    //ptcl_send_list.del();
-    //ptcl_send_PE.del();
+    ptcl_send_list.del();
+    ptcl_send_PE.del();
     
     // -
     // |
@@ -341,7 +342,6 @@ public:
 
     for ( int k = 1 ; k <= PTCL.n ; ++k )
       {
-  
 	if ( PTCL.active[k] == 1 )
 	  {
 	    iL = int ( (PTCL.x[k]-x0) / dx ) + 1;    // point to the left

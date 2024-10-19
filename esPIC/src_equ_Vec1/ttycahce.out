@@ -42,7 +42,7 @@ Time = 0.09
 Plotting output at time = 0.09 Latest matrix solver iteration count = 184
 Time = 0.1
 Plotting output at time = 0.1 Latest matrix solver iteration count = 165
-[ [ main ] EXECUTION TIME  = 2559938861 (ns)
-main ] EXECUTION TIME  = 2615366870 (ns)
-[ main ] EXECUTION TIME  = 2607520887 (ns)
-[ main ] EXECUTION TIME  = 2605183172 (ns)
+[ main ] EXECUTION TIME  = 2228822588 (ns)
+[ main ] EXECUTION TIME  = 2298492259 (ns)
+[ main ] EXECUTION TIME  = 2287571386 (ns)
+[ main ] EXECUTION TIME  = 2293691473 (ns)

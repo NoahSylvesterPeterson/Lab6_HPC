@@ -144,13 +144,14 @@ int main(int argc, char *argv[])
 
    double timeSinceLastPlot = 0.;
    int latestIterCount;
-
+   
    double dx2 = MESH.dx*MESH.dx;
    double dy2 = MESH.dy*MESH.dy;
    double nrealx = MESH.nRealx;
    double coeff1 = 2./dx2 - 2./dy2;
    double coeffx = 1./dx2;
    double coeffy = 1./dy2;
+
    for ( double t = 0. ; t <= tEnd ; t += dt )
      {
        if ( myMPI.myPE == 0 ) cout << "Time = " << t << endl;
