@@ -25,22 +25,22 @@ def RMSE(new, old,n):
 def main():
     print("Changed vectors")
     for i in range(4):
-        origional = f"src/ptcl_{i}_99.plt"
-        new = f"src_Vector_Class/ptcl_{i}_99.plt"
+        origional = f"src/pc_{i}_F.out"
+        new = f"src_Vector_Class/pc_{i}_F.out"
         orig = load_from_file(origional)
         new = load_from_file(new)
         n = new.shape[0]
         rmse1 = RMSE(new, orig,n)
-        print(f"RMSE between ptcl_{i}_99.plt: "+ str(rmse1))
+        print(f"RMSE between pc_{i}_F.out: "+ str(rmse1))
     print("changed Equation")
     for i in range(4):
-        origional = f"src/ptcl_{i}_99.plt"
-        new = f"src_equ_Vec1/ptcl_{i}_99.plt"
+        origional = f"src/pc_{i}_F.out"
+        new = f"src_equ_Vec1/pc_{i}_F.out"
         orig = load_from_file(origional)
         new = load_from_file(new)
         n = new.shape[0]
         rmse1 = RMSE(new, orig,n)
-        print(f"RMSE between ptcl_{i}_99.plt: "+ str(rmse1))
+        print(f"RMSE between pc_{i}_F.out: "+ str(rmse1))
 
     
 
