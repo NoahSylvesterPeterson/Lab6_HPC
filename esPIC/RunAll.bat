@@ -59,7 +59,7 @@ cd ../src_equ_Vec1
 mpicxx esPIC.cpp -o esPIC
 mpirun -n 4 ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 1 -dt 0.01 > ../equ1.out
 cd ..
-python RMSE.py > RMSE.out
+#python RMSE.py > RMSE.out
 echo "=="
 echo "||"
 echo "|| Execution of ert in slurm batch script complete."
