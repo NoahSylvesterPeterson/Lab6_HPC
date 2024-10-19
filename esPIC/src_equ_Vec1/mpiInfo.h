@@ -141,33 +141,32 @@ class mpiInfo
 	// ----------------------------------------------
 
 	// (1.1) Put values into communication arrays
-	//cout << "line 144" << endl;
+	
 	sLOOP phiSend_n[s] = Solution[ pid(    s , nRealy-1 ) ]; 
 	sLOOP phiSend_s[s] = Solution[ pid(    s ,    2     ) ]; 
 	tLOOP phiSend_w[t] = Solution[ pid(    2 ,    t     ) ];      
 	tLOOP phiSend_e[t] = Solution[ pid( nRealx-1 ,    t ) ];
 
 	// (1.2) Send them to neighboring PEs
-  //cout << "line 151" << endl;
+
 	if ( nei_n >= 0 )  err = MPI_Isend(phiSend_n, countx , MPI_DOUBLE , nei_n , tag , MPI_COMM_WORLD , &request );
 	if ( nei_s >= 0 )  err = MPI_Isend(phiSend_s, countx , MPI_DOUBLE , nei_s , tag , MPI_COMM_WORLD , &request );
 	if ( nei_e >= 0 )  err = MPI_Isend(phiSend_e, county , MPI_DOUBLE , nei_e , tag , MPI_COMM_WORLD , &request );
 	if ( nei_w >= 0 )  err = MPI_Isend(phiSend_w, county , MPI_DOUBLE , nei_w , tag , MPI_COMM_WORLD , &request );
 
 	// (1.3) Receive values from neighobring PEs' physical boundaries.
-	//cout << "line 158" << endl;
+	
 	if ( nei_n >= 0 ) { err = MPI_Irecv(phiRecv_n, countx , MPI_DOUBLE , nei_n , tag , MPI_COMM_WORLD , &request );   MPI_Wait(&request,&status); } 
 	if ( nei_s >= 0 ) { err = MPI_Irecv(phiRecv_s, countx , MPI_DOUBLE , nei_s , tag , MPI_COMM_WORLD , &request );   MPI_Wait(&request,&status); } 
 	if ( nei_e >= 0 ) { err = MPI_Irecv(phiRecv_e, county , MPI_DOUBLE , nei_e , tag , MPI_COMM_WORLD , &request );   MPI_Wait(&request,&status); } 
 	if ( nei_w >= 0 ) { err = MPI_Irecv(phiRecv_w, county , MPI_DOUBLE , nei_w , tag , MPI_COMM_WORLD , &request );   MPI_Wait(&request,&status); } 
 	
 	// (1.4) Update BCs using the exchanged information
-	//cout << "line 165" << endl;
+	
 	if ( nei_n >= 0 ) sLOOP b[ pid ( s        , nRealy+1 ) ] = phiRecv_n[s] ;  
 	if ( nei_s >= 0 ) sLOOP b[ pid ( s        ,    0     ) ] = phiRecv_s[s] ;  
 	if ( nei_e >= 0 ) tLOOP b[ pid ( nRealx+1 ,    t     ) ] = phiRecv_e[t] ;  
-	if ( nei_w >= 0 ) tLOOP b[ pid ( 0        ,    t     ) ] = phiRecv_w[t] ;
-  //cout << "line 170" << endl;
+	if ( nei_w >= 0 ) tLOOP b[ pid ( 0        ,    t     ) ] = phiRecv_w[t] ;  
   }
 
   
@@ -305,7 +304,7 @@ class mpiInfo
     sLOOP phiSend_s[s] = field[ pid(    s , 1        ) ];
 
     // (1.2) Send field to the neighboring PEs
-    //cout << "line 308" <<endl;
+
     if ( nei_n >= 0 )  err = MPI_Isend(phiSend_n, countx , MPI_DOUBLE , nei_n , tag , MPI_COMM_WORLD , &request );
     if ( nei_s >= 0 )  err = MPI_Isend(phiSend_s, countx , MPI_DOUBLE , nei_s , tag , MPI_COMM_WORLD , &request );
 
@@ -314,7 +313,7 @@ class mpiInfo
     sLOOP {  phiRecv_n[s] = 0.; phiRecv_s[s] = 0.; }  // top  and bottom
 
     // (1.4) Receive values from neighboring PEs' physical boundaries.
-    //cout << "line 317" <<endl;
+	
     if ( nei_n >= 0 ){ err = MPI_Irecv(phiRecv_n, countx , MPI_DOUBLE , nei_n , tag , MPI_COMM_WORLD , &request); MPI_Wait(&request,&status);}
     if ( nei_s >= 0 ){ err = MPI_Irecv(phiRecv_s, countx , MPI_DOUBLE , nei_s , tag , MPI_COMM_WORLD , &request); MPI_Wait(&request,&status);}
 
@@ -333,7 +332,7 @@ class mpiInfo
     tLOOP phiSend_w[t] = field[ pid( 1          ,  t ) ];   
 
     // (2.2)
-    //cout << "line 336" <<endl;
+
     if ( nei_e >= 0 ) err = MPI_Isend(phiSend_e, county , MPI_DOUBLE , nei_e , tag , MPI_COMM_WORLD , &request);
     if ( nei_w >= 0 ) err = MPI_Isend(phiSend_w, county , MPI_DOUBLE , nei_w , tag , MPI_COMM_WORLD , &request);
 
@@ -342,18 +341,14 @@ class mpiInfo
     tLOOP {  phiRecv_e[t] = 0.; phiRecv_w[t] = 0.; }  // left and right sides
 
     // (2.4)
-    //cout << "line 345" <<endl;
-    
-    //MPI_Barrier(MPI_COMM_WORLD);
-    //cout << myPE << endl;
+
     if ( nei_e >= 0 ){ err = MPI_Irecv(phiRecv_e, county , MPI_DOUBLE , nei_e , tag , MPI_COMM_WORLD , &request); MPI_Wait(&request,&status);}
-    //MPI_Barrier(MPI_COMM_WORLD);
     if ( nei_w >= 0 ){ err = MPI_Irecv(phiRecv_w, county , MPI_DOUBLE , nei_w , tag , MPI_COMM_WORLD , &request); MPI_Wait(&request,&status);}
 
     // (2.5)
-    //MPI_Barrier(MPI_COMM_WORLD);
+
     tLOOP {  field[ pid(1,t)      ] += phiRecv_w[t];	field[ pid(nRealx,t) ] += phiRecv_e[t];      }  // left and right sides
-    //cout << "line 352" <<endl;
+
   }
 
 

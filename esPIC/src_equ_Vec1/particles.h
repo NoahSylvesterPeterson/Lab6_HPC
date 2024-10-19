@@ -87,6 +87,10 @@ class particles
       previousInjectionTime = 0.;
     }
 
+
+  void del(){ 
+    x.del(); y.del(); vx.del(); vy.del(); active.del(); xf.del(); yf.del();
+  }
   // ==
   // ||
   // ||  Adds new particles to the list of particles

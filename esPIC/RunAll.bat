@@ -58,17 +58,6 @@ rm *.plt
 
 
 
-cd ../src_Vector_Class
-echo "vec2"
-mpicxx esPIC.cpp -o esPIC
-mpirun -n 4 ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 1 -dt 0.01 > ../vec2.out
-cp ptcl_0_99.plt pc_0_F.out
-cp ptcl_1_99.plt pc_1_F.out
-cp ptcl_2_99.plt pc_2_F.out
-cp ptcl_3_99.plt pc_3_F.out
-rm *.plt
-
-
 
 echo "equ1"
 cd ../src_equ_Vec1

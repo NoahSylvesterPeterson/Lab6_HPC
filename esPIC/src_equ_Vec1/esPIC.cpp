@@ -188,7 +188,8 @@ int main(int argc, char *argv[])
 	 }
      }
 
-
+    MESH.del();
+    PTCL.del();
    EndTimer("main", t0, t1);
 
 

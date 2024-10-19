@@ -149,13 +149,15 @@ public:
   //  ||  Form Linear System Ax = b
   //  ||
   //  ==
-
+  void del(){
+    x.del();y.del(); Acoef.del(); Jcoef.del() ; phi.del() ;  b.del() ; Qval.del();
+  }
   void FormLS(mpiInfo &myMPI)
   {
     
     rLOOP cLOOP Acoef[r][c] = 0.;  // Initialize linear system
-    // rLOOP cLOOP Jcoef[r][c] = 0.;  //
-    // rLOOP       Jcoef[r][1] = r;   //
+    rLOOP cLOOP Jcoef[r][c] = 0.;  //
+    rLOOP       Jcoef[r][1] = r;   //
     rLOOP b[r] = 0.;
     
     double dx2 = dx*dx;           // Form matrix entries for the interior grid points
@@ -171,11 +173,11 @@ public:
 	Acoef[ p ][ 4 ] =  1./dy2;
 	Acoef[ p ][ 5 ] =  1./dy2;
 
-	// Jcoef[ p ][ 1 ] =  pid( i  , j  );
-	// Jcoef[ p ][ 2 ] =  pid( i+1, j  );
-	// Jcoef[ p ][ 3 ] =  pid( i-1, j  );
-	// Jcoef[ p ][ 4 ] =  pid( i  , j+1);
-	// Jcoef[ p ][ 5 ] =  pid( i  , j-1);
+	Jcoef[ p ][ 1 ] =  pid( i  , j  );
+	Jcoef[ p ][ 2 ] =  pid( i+1, j  );
+	Jcoef[ p ][ 3 ] =  pid( i-1, j  );
+	Jcoef[ p ][ 4 ] =  pid( i  , j+1);
+	Jcoef[ p ][ 5 ] =  pid( i  , j-1);
 	
       }
 
