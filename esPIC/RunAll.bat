@@ -81,7 +81,7 @@ cp ptcl_3_99.plt pc_3_F.out
 rm *.plt
 
 cd ..
-#python RMSE.py > RMSE.out
+python RMSE.py > RMSE.out
 echo "=="
 echo "||"
 echo "|| Execution of ert in slurm batch script complete."
