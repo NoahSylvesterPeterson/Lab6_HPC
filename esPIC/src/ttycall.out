@@ -1,0 +1,48 @@
+
+------------------------------------------------------
+
+ E L E C T R O S T I C   P A R T I C L E - I N - C E L L
+ D E M O   C O D E                           
+
+ Running on 4 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 2
+             y-direction: 2
+No. Cells in x-direction: 10
+             y-direction: 10
+Flux density            : 400
+End Time                : 0.1
+Time Step               : 0.01
+Plot Interval           : 0
+
+Time = 0
+Plotting output at time = 0 Latest matrix solver iteration count = 497
+Time = 0.01
+Plotting output at time = 0.01 Latest matrix solver iteration count = 362
+Time = 0.02
+Plotting output at time = 0.02 Latest matrix solver iteration count = 337
+Time = 0.03
+Plotting output at time = 0.03 Latest matrix solver iteration count = 314
+Time = 0.04
+Plotting output at time = 0.04 Latest matrix solver iteration count = 291
+Time = 0.05
+Plotting output at time = 0.05 Latest matrix solver iteration count = 268
+Time = 0.06
+Plotting output at time = 0.06 Latest matrix solver iteration count = 247
+Time = 0.07
+Plotting output at time = 0.07 Latest matrix solver iteration count = 225
+Time = 0.08
+Plotting output at time = 0.08 Latest matrix solver iteration count = 204
+Time = 0.09
+Plotting output at time = 0.09 Latest matrix solver iteration count = 184
+Time = 0.1
+Plotting output at time = 0.1 Latest matrix solver iteration count = 165
+[ main ] EXECUTION TIME  = 2225615038 (ns)
+[ main ] EXECUTION TIME  = 2212763345 (ns)
+[ main ] EXECUTION TIME  = 2198918651 (ns)
+[ main ] EXECUTION TIME  = 2235145929 (ns)

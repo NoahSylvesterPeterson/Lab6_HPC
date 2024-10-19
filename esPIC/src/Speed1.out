@@ -1,0 +1,123 @@
+
+------------------------------------------------------
+
+ E L E C T R O S T I C   P A R T I C L E - I N - C E L L
+ D E M O   C O D E                           
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 24
+             y-direction: 24
+Flux density            : 400
+End Time                : 0.5
+Time Step               : 0.01
+Plot Interval           : 0
+
+Time = 0
+Plotting output at time = 0 Latest matrix solver iteration count = 665
+Time = 0.01
+Plotting output at time = 0.01 Latest matrix solver iteration count = 487
+Time = 0.02
+Plotting output at time = 0.02 Latest matrix solver iteration count = 446
+Time = 0.03
+Plotting output at time = 0.03 Latest matrix solver iteration count = 412
+Time = 0.04
+Plotting output at time = 0.04 Latest matrix solver iteration count = 378
+Time = 0.05
+Plotting output at time = 0.05 Latest matrix solver iteration count = 345
+Time = 0.06
+Plotting output at time = 0.06 Latest matrix solver iteration count = 313
+Time = 0.07
+Plotting output at time = 0.07 Latest matrix solver iteration count = 282
+Time = 0.08
+Plotting output at time = 0.08 Latest matrix solver iteration count = 253
+Time = 0.09
+Plotting output at time = 0.09 Latest matrix solver iteration count = 224
+Time = 0.1
+Plotting output at time = 0.1 Latest matrix solver iteration count = 198
+Time = 0.11
+Plotting output at time = 0.11 Latest matrix solver iteration count = 173
+Time = 0.12
+Plotting output at time = 0.12 Latest matrix solver iteration count = 150
+Time = 0.13
+Plotting output at time = 0.13 Latest matrix solver iteration count = 129
+Time = 0.14
+Plotting output at time = 0.14 Latest matrix solver iteration count = 110
+Time = 0.15
+Plotting output at time = 0.15 Latest matrix solver iteration count = 93
+Time = 0.16
+Plotting output at time = 0.16 Latest matrix solver iteration count = 78
+Time = 0.17
+Plotting output at time = 0.17 Latest matrix solver iteration count = 65
+Time = 0.18
+Plotting output at time = 0.18 Latest matrix solver iteration count = 54
+Time = 0.19
+Plotting output at time = 0.19 Latest matrix solver iteration count = 44
+Time = 0.2
+Plotting output at time = 0.2 Latest matrix solver iteration count = 394
+Time = 0.21
+Plotting output at time = 0.21 Latest matrix solver iteration count = 522
+Time = 0.22
+Plotting output at time = 0.22 Latest matrix solver iteration count = 581
+Time = 0.23
+Plotting output at time = 0.23 Latest matrix solver iteration count = 618
+Time = 0.24
+Plotting output at time = 0.24 Latest matrix solver iteration count = 643
+Time = 0.25
+Plotting output at time = 0.25 Latest matrix solver iteration count = 660
+Time = 0.26
+Plotting output at time = 0.26 Latest matrix solver iteration count = 673
+Time = 0.27
+Plotting output at time = 0.27 Latest matrix solver iteration count = 683
+Time = 0.28
+Plotting output at time = 0.28 Latest matrix solver iteration count = 690
+Time = 0.29
+Plotting output at time = 0.29 Latest matrix solver iteration count = 696
+Time = 0.3
+Plotting output at time = 0.3 Latest matrix solver iteration count = 700
+Time = 0.31
+Plotting output at time = 0.31 Latest matrix solver iteration count = 704
+Time = 0.32
+Plotting output at time = 0.32 Latest matrix solver iteration count = 706
+Time = 0.33
+Plotting output at time = 0.33 Latest matrix solver iteration count = 709
+Time = 0.34
+Plotting output at time = 0.34 Latest matrix solver iteration count = 711
+Time = 0.35
+Plotting output at time = 0.35 Latest matrix solver iteration count = 712
+Time = 0.36
+Plotting output at time = 0.36 Latest matrix solver iteration count = 713
+Time = 0.37
+Plotting output at time = 0.37 Latest matrix solver iteration count = 714
+Time = 0.38
+Plotting output at time = 0.38 Latest matrix solver iteration count = 716
+Time = 0.39
+Plotting output at time = 0.39 Latest matrix solver iteration count = 716
+Time = 0.4
+Plotting output at time = 0.4 Latest matrix solver iteration count = 747
+Time = 0.41
+Plotting output at time = 0.41 Latest matrix solver iteration count = 767
+Time = 0.42
+Plotting output at time = 0.42 Latest matrix solver iteration count = 785
+Time = 0.43
+Plotting output at time = 0.43 Latest matrix solver iteration count = 798
+Time = 0.44
+Plotting output at time = 0.44 Latest matrix solver iteration count = 807
+Time = 0.45
+Plotting output at time = 0.45 Latest matrix solver iteration count = 812
+Time = 0.46
+Plotting output at time = 0.46 Latest matrix solver iteration count = 819
+Time = 0.47
+Plotting output at time = 0.47 Latest matrix solver iteration count = 825
+Time = 0.48
+Plotting output at time = 0.48 Latest matrix solver iteration count = 828
+Time = 0.49
+Plotting output at time = 0.49 Latest matrix solver iteration count = 828
+[ main ] EXECUTION TIME  = 1937191522 (ns)
