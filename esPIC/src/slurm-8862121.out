@@ -1,0 +1,950 @@
+==
+||
+|| Begin Execution of ert in slurm batch script.
+||
+==
+==2836351== Callgrind, a call-graph generating cache profiler
+==2836351== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836351== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836351== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836351== 
+==2836351== For interactive control, run 'callgrind_control -h'.
+==2836348== Callgrind, a call-graph generating cache profiler
+==2836348== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836348== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836348== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836348== 
+==2836348== For interactive control, run 'callgrind_control -h'.
+==2836350== Callgrind, a call-graph generating cache profiler
+==2836350== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836350== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836350== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836350== 
+==2836349== Callgrind, a call-graph generating cache profiler
+==2836349== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836349== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836349== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836349== 
+==2836350== For interactive control, run 'callgrind_control -h'.
+==2836349== For interactive control, run 'callgrind_control -h'.
+==2836348== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836348==    This could cause spurious value errors to appear.
+==2836348==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836349== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836349==    This could cause spurious value errors to appear.
+==2836349==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836350== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836350==    This could cause spurious value errors to appear.
+==2836350==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836351== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836351==    This could cause spurious value errors to appear.
+==2836351==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836348== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2836348== (see section Limitations in user manual)
+==2836348== NOTE: further instances of this message will not be shown
+==2836349== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2836349== (see section Limitations in user manual)
+==2836349== NOTE: further instances of this message will not be shown
+==2836350== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2836350== (see section Limitations in user manual)
+==2836350== NOTE: further instances of this message will not be shown
+==2836351== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2836351== (see section Limitations in user manual)
+==2836351== NOTE: further instances of this message will not be shown
+==2836348== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836349== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836350== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836351== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836348== 
+==2836349== 
+==2836351== 
+==2836350== 
+==2836351== Events    : Ir
+==2836351== Collected : 404256775
+==2836351== 
+==2836351== I   refs:      404,256,775
+==2836349== Events    : Ir
+==2836349== Collected : 403815985
+==2836349== 
+==2836349== I   refs:      403,815,985
+==2836348== Events    : Ir
+==2836348== Collected : 398780561
+==2836348== 
+==2836348== I   refs:      398,780,561
+==2836350== Events    : Ir
+==2836350== Collected : 400431715
+==2836350== 
+==2836350== I   refs:      400,431,715
+==2836417== Cachegrind, a cache and branch-prediction profiler
+==2836417== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2836417== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836417== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836417== 
+--2836417-- warning: L3 cache found, using its data for the LL simulation.
+==2836418== Cachegrind, a cache and branch-prediction profiler
+==2836418== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2836418== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836418== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836418== 
+--2836418-- warning: L3 cache found, using its data for the LL simulation.
+==2836419== Cachegrind, a cache and branch-prediction profiler
+==2836419== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2836419== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836419== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836419== 
+--2836419-- warning: L3 cache found, using its data for the LL simulation.
+==2836420== Cachegrind, a cache and branch-prediction profiler
+==2836420== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2836420== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836420== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836420== 
+--2836420-- warning: L3 cache found, using its data for the LL simulation.
+==2836417== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836417==    This could cause spurious value errors to appear.
+==2836417==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836418== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836418==    This could cause spurious value errors to appear.
+==2836418==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836419== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836419==    This could cause spurious value errors to appear.
+==2836419==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836420== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836420==    This could cause spurious value errors to appear.
+==2836420==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836418== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2836418== (see section Limitations in user manual)
+==2836418== NOTE: further instances of this message will not be shown
+==2836417== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2836417== (see section Limitations in user manual)
+==2836417== NOTE: further instances of this message will not be shown
+==2836420== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2836420== (see section Limitations in user manual)
+==2836420== NOTE: further instances of this message will not be shown
+==2836419== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2836419== (see section Limitations in user manual)
+==2836419== NOTE: further instances of this message will not be shown
+==2836417== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836418== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836419== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836420== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836418== 
+==2836420== 
+==2836417== 
+==2836418== I   refs:      428,593,775
+==2836418== I1  misses:      1,601,288
+==2836418== LLi misses:         21,917
+==2836418== I1  miss rate:        0.37%
+==2836418== LLi miss rate:        0.01%
+==2836418== 
+==2836418== D   refs:      188,058,804  (106,496,719 rd   + 81,562,085 wr)
+==2836418== D1  misses:      3,375,447  (  2,125,975 rd   +  1,249,472 wr)
+==2836418== LLd misses:        451,274  (     45,271 rd   +    406,003 wr)
+==2836418== D1  miss rate:         1.8% (        2.0%     +        1.5%  )
+==2836418== LLd miss rate:         0.2% (        0.0%     +        0.5%  )
+==2836418== 
+==2836418== LL refs:         4,976,735  (  3,727,263 rd   +  1,249,472 wr)
+==2836418== LL misses:         473,191  (     67,188 rd   +    406,003 wr)
+==2836418== LL miss rate:          0.1% (        0.0%     +        0.5%  )
+==2836420== I   refs:      422,999,822
+==2836420== I1  misses:      1,557,547
+==2836420== LLi misses:         21,915
+==2836420== I1  miss rate:        0.37%
+==2836420== LLi miss rate:        0.01%
+==2836420== 
+==2836420== D   refs:      185,919,171  (104,720,655 rd   + 81,198,516 wr)
+==2836420== D1  misses:      3,355,621  (  2,104,097 rd   +  1,251,524 wr)
+==2836420== LLd misses:        449,826  (     45,478 rd   +    404,348 wr)
+==2836420== D1  miss rate:         1.8% (        2.0%     +        1.5%  )
+==2836420== LLd miss rate:         0.2% (        0.0%     +        0.5%  )
+==2836420== 
+==2836420== LL refs:         4,913,168  (  3,661,644 rd   +  1,251,524 wr)
+==2836420== LL misses:         471,741  (     67,393 rd   +    404,348 wr)
+==2836420== LL miss rate:          0.1% (        0.0%     +        0.5%  )
+==2836419== 
+==2836417== I   refs:      414,053,748
+==2836417== I1  misses:      2,402,149
+==2836417== LLi misses:         22,438
+==2836417== I1  miss rate:        0.58%
+==2836417== LLi miss rate:        0.01%
+==2836417== 
+==2836417== D   refs:      181,048,929  (100,790,006 rd   + 80,258,923 wr)
+==2836417== D1  misses:      3,699,926  (  2,316,265 rd   +  1,383,661 wr)
+==2836417== LLd misses:        478,462  (     54,456 rd   +    424,006 wr)
+==2836417== D1  miss rate:         2.0% (        2.3%     +        1.7%  )
+==2836417== LLd miss rate:         0.3% (        0.1%     +        0.5%  )
+==2836417== 
+==2836417== LL refs:         6,102,075  (  4,718,414 rd   +  1,383,661 wr)
+==2836417== LL misses:         500,900  (     76,894 rd   +    424,006 wr)
+==2836417== LL miss rate:          0.1% (        0.0%     +        0.5%  )
+==2836419== I   refs:      420,689,782
+==2836419== I1  misses:      1,692,557
+==2836419== LLi misses:         22,106
+==2836419== I1  miss rate:        0.40%
+==2836419== LLi miss rate:        0.01%
+==2836419== 
+==2836419== D   refs:      183,930,230  (103,864,059 rd   + 80,066,171 wr)
+==2836419== D1  misses:      3,449,503  (  2,173,563 rd   +  1,275,940 wr)
+==2836419== LLd misses:        451,497  (     45,108 rd   +    406,389 wr)
+==2836419== D1  miss rate:         1.9% (        2.1%     +        1.6%  )
+==2836419== LLd miss rate:         0.2% (        0.0%     +        0.5%  )
+==2836419== 
+==2836419== LL refs:         5,142,060  (  3,866,120 rd   +  1,275,940 wr)
+==2836419== LL misses:         473,603  (     67,214 rd   +    406,389 wr)
+==2836419== LL miss rate:          0.1% (        0.0%     +        0.5%  )
+==2836515== Callgrind, a call-graph generating cache profiler
+==2836515== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836515== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836515== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836515== 
+==2836514== Callgrind, a call-graph generating cache profiler
+==2836514== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836514== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836514== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836514== 
+==2836516== Callgrind, a call-graph generating cache profiler
+==2836516== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836516== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836517== Callgrind, a call-graph generating cache profiler
+==2836517== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836517== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836517== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836517== 
+==2836516== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836516== 
+==2836515== For interactive control, run 'callgrind_control -h'.
+==2836516== For interactive control, run 'callgrind_control -h'.
+==2836514== For interactive control, run 'callgrind_control -h'.
+==2836517== For interactive control, run 'callgrind_control -h'.
+==2836514== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836514==    This could cause spurious value errors to appear.
+==2836514==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836517== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836517==    This could cause spurious value errors to appear.
+==2836517==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836515== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836515==    This could cause spurious value errors to appear.
+==2836515==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836516== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836516==    This could cause spurious value errors to appear.
+==2836516==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836514== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836514== (see section Limitations in user manual)
+==2836514== NOTE: further instances of this message will not be shown
+==2836515== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836515== (see section Limitations in user manual)
+==2836515== NOTE: further instances of this message will not be shown
+==2836516== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836516== (see section Limitations in user manual)
+==2836516== NOTE: further instances of this message will not be shown
+==2836517== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836517== (see section Limitations in user manual)
+==2836517== NOTE: further instances of this message will not be shown
+==2836514== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836515== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836516== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836517== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836515== 
+==2836514== 
+==2836516== 
+==2836517== 
+==2836515== Events    : Ir
+==2836515== Collected : 4637216921
+==2836515== 
+==2836515== I   refs:      4,637,216,921
+==2836517== Events    : Ir
+==2836517== Collected : 4603599220
+==2836517== 
+==2836517== I   refs:      4,603,599,220
+==2836516== Events    : Ir
+==2836516== Collected : 4651777151
+==2836516== 
+==2836516== I   refs:      4,651,777,151
+==2836514== Events    : Ir
+==2836514== Collected : 4625989751
+==2836514== 
+==2836514== I   refs:      4,625,989,751
+==2836605== Cachegrind, a cache and branch-prediction profiler
+==2836605== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2836605== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836605== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836605== 
+--2836605-- warning: L3 cache found, using its data for the LL simulation.
+==2836606== Cachegrind, a cache and branch-prediction profiler
+==2836606== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2836606== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836606== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836606== 
+--2836606-- warning: L3 cache found, using its data for the LL simulation.
+==2836607== Cachegrind, a cache and branch-prediction profiler
+==2836607== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2836607== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836607== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836607== 
+--2836607-- warning: L3 cache found, using its data for the LL simulation.
+==2836608== Cachegrind, a cache and branch-prediction profiler
+==2836608== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2836608== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836608== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836608== 
+--2836608-- warning: L3 cache found, using its data for the LL simulation.
+==2836606== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836606==    This could cause spurious value errors to appear.
+==2836606==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836605== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836605==    This could cause spurious value errors to appear.
+==2836605==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836607== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836607==    This could cause spurious value errors to appear.
+==2836607==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836608== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836608==    This could cause spurious value errors to appear.
+==2836608==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836605== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836605== (see section Limitations in user manual)
+==2836605== NOTE: further instances of this message will not be shown
+==2836606== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836606== (see section Limitations in user manual)
+==2836606== NOTE: further instances of this message will not be shown
+==2836607== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836607== (see section Limitations in user manual)
+==2836607== NOTE: further instances of this message will not be shown
+==2836608== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836608== (see section Limitations in user manual)
+==2836608== NOTE: further instances of this message will not be shown
+==2836605== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836606== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836607== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836608== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836606== 
+==2836608== 
+==2836607== 
+==2836605== 
+==2836608== I   refs:      4,638,535,033
+==2836608== I1  misses:       12,937,966
+==2836608== LLi misses:           21,938
+==2836608== I1  miss rate:          0.28%
+==2836608== LLi miss rate:          0.00%
+==2836608== 
+==2836608== D   refs:      2,362,315,752  (1,652,883,023 rd   + 709,432,729 wr)
+==2836608== D1  misses:       91,149,812  (   80,449,460 rd   +  10,700,352 wr)
+==2836608== LLd misses:          579,648  (       44,219 rd   +     535,429 wr)
+==2836608== D1  miss rate:           3.9% (          4.9%     +         1.5%  )
+==2836608== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2836608== 
+==2836608== LL refs:         104,087,778  (   93,387,426 rd   +  10,700,352 wr)
+==2836608== LL misses:           601,586  (       66,157 rd   +     535,429 wr)
+==2836608== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==2836607== I   refs:      4,693,917,985
+==2836607== I1  misses:       14,085,036
+==2836607== LLi misses:           22,066
+==2836607== I1  miss rate:          0.30%
+==2836607== LLi miss rate:          0.00%
+==2836607== 
+==2836607== D   refs:      2,385,739,991  (1,671,705,541 rd   + 714,034,450 wr)
+==2836607== D1  misses:       91,392,601  (   80,602,154 rd   +  10,790,447 wr)
+==2836607== LLd misses:          578,307  (       44,061 rd   +     534,246 wr)
+==2836607== D1  miss rate:           3.8% (          4.8%     +         1.5%  )
+==2836607== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2836607== 
+==2836607== LL refs:         105,477,637  (   94,687,190 rd   +  10,790,447 wr)
+==2836607== LL misses:           600,373  (       66,127 rd   +     534,246 wr)
+==2836607== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==2836606== I   refs:      4,708,858,814
+==2836606== I1  misses:       14,117,629
+==2836606== LLi misses:           21,896
+==2836606== I1  miss rate:          0.30%
+==2836606== LLi miss rate:          0.00%
+==2836606== 
+==2836606== D   refs:      2,393,093,779  (1,677,413,666 rd   + 715,680,113 wr)
+==2836606== D1  misses:       91,459,787  (   80,647,416 rd   +  10,812,371 wr)
+==2836606== LLd misses:          579,496  (       44,303 rd   +     535,193 wr)
+==2836606== D1  miss rate:           3.8% (          4.8%     +         1.5%  )
+==2836606== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2836606== 
+==2836606== LL refs:         105,577,416  (   94,765,045 rd   +  10,812,371 wr)
+==2836606== LL misses:           601,392  (       66,199 rd   +     535,193 wr)
+==2836606== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==2836605== I   refs:      4,677,835,533
+==2836605== I1  misses:       16,100,237
+==2836605== LLi misses:           22,425
+==2836605== I1  miss rate:          0.34%
+==2836605== LLi miss rate:          0.00%
+==2836605== 
+==2836605== D   refs:      2,378,345,532  (1,664,090,780 rd   + 714,254,752 wr)
+==2836605== D1  misses:       91,991,112  (   81,017,380 rd   +  10,973,732 wr)
+==2836605== LLd misses:          668,517  (       76,474 rd   +     592,043 wr)
+==2836605== D1  miss rate:           3.9% (          4.9%     +         1.5%  )
+==2836605== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2836605== 
+==2836605== LL refs:         108,091,349  (   97,117,617 rd   +  10,973,732 wr)
+==2836605== LL misses:           690,942  (       98,899 rd   +     592,043 wr)
+==2836605== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==2836698== Callgrind, a call-graph generating cache profiler
+==2836698== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836698== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836698== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 100 -nCelly 100 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836698== 
+==2836699== Callgrind, a call-graph generating cache profiler
+==2836699== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836699== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836699== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 100 -nCelly 100 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836699== 
+==2836700== Callgrind, a call-graph generating cache profiler
+==2836700== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836700== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836700== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 100 -nCelly 100 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836700== 
+==2836701== Callgrind, a call-graph generating cache profiler
+==2836701== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2836701== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2836701== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 100 -nCelly 100 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2836701== 
+==2836698== For interactive control, run 'callgrind_control -h'.
+==2836699== For interactive control, run 'callgrind_control -h'.
+==2836701== For interactive control, run 'callgrind_control -h'.
+==2836700== For interactive control, run 'callgrind_control -h'.
+==2836698== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836698==    This could cause spurious value errors to appear.
+==2836698==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836699== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836699==    This could cause spurious value errors to appear.
+==2836699==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836700== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836700==    This could cause spurious value errors to appear.
+==2836700==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836701== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2836701==    This could cause spurious value errors to appear.
+==2836701==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2836699== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836699== (see section Limitations in user manual)
+==2836699== NOTE: further instances of this message will not be shown
+==2836698== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836698== (see section Limitations in user manual)
+==2836698== NOTE: further instances of this message will not be shown
+==2836700== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836700== (see section Limitations in user manual)
+==2836700== NOTE: further instances of this message will not be shown
+==2836701== brk segment overflow in thread #1: can't grow to 0x4a32000
+==2836701== (see section Limitations in user manual)
+==2836701== NOTE: further instances of this message will not be shown
+==2836698== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836699== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836700== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836701== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2836699== 
+==2836700== 
+==2836701== 
+==2836698== 
+==2836699== Events    : Ir
+==2836699== Collected : 22698150761
+==2836699== 
+==2836699== I   refs:      22,698,150,761
+==2836701== Events    : Ir
+==2836701== Collected : 22714249561
+==2836701== 
+==2836701== I   refs:      22,714,249,561
+==2836700== Events    : Ir
+==2836700== Collected : 22690733134
+==2836700== 
+==2836700== I   refs:      22,690,733,134
+==2836698== Events    : Ir
+==2836698== Collected : 22640162761
+==2836698== 
+==2836698== I   refs:      22,640,162,761
+==2837059== Cachegrind, a cache and branch-prediction profiler
+==2837059== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837059== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837059== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 100 -nCelly 100 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837059== 
+--2837059-- warning: L3 cache found, using its data for the LL simulation.
+==2837060== Cachegrind, a cache and branch-prediction profiler
+==2837060== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837060== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837060== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 100 -nCelly 100 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837060== 
+--2837060-- warning: L3 cache found, using its data for the LL simulation.
+==2837061== Cachegrind, a cache and branch-prediction profiler
+==2837061== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837061== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837061== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 100 -nCelly 100 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837061== 
+--2837061-- warning: L3 cache found, using its data for the LL simulation.
+==2837062== Cachegrind, a cache and branch-prediction profiler
+==2837062== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837062== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837062== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 100 -nCelly 100 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837062== 
+--2837062-- warning: L3 cache found, using its data for the LL simulation.
+==2837059== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837059==    This could cause spurious value errors to appear.
+==2837059==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837060== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837060==    This could cause spurious value errors to appear.
+==2837060==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837062== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837062==    This could cause spurious value errors to appear.
+==2837062==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837061== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837061==    This could cause spurious value errors to appear.
+==2837061==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837059== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837059== (see section Limitations in user manual)
+==2837059== NOTE: further instances of this message will not be shown
+==2837060== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837060== (see section Limitations in user manual)
+==2837060== NOTE: further instances of this message will not be shown
+==2837061== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837061== (see section Limitations in user manual)
+==2837061== NOTE: further instances of this message will not be shown
+==2837062== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837062== (see section Limitations in user manual)
+==2837062== NOTE: further instances of this message will not be shown
+==2837059== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837060== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837061== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837062== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837060== 
+==2837062== 
+==2837061== 
+==2837059== 
+==2837060== I   refs:      22,758,842,017
+==2837060== I1  misses:        43,456,118
+==2837060== LLi misses:            22,038
+==2837060== I1  miss rate:           0.19%
+==2837060== LLi miss rate:           0.00%
+==2837060== 
+==2837060== D   refs:      12,302,435,983  (8,989,483,900 rd   + 3,312,952,083 wr)
+==2837060== D1  misses:       558,048,835  (  503,385,994 rd   +    54,662,841 wr)
+==2837060== LLd misses:           725,562  (       44,711 rd   +       680,851 wr)
+==2837060== D1  miss rate:            4.5% (          5.6%     +           1.6%  )
+==2837060== LLd miss rate:            0.0% (          0.0%     +           0.0%  )
+==2837060== 
+==2837060== LL refs:          601,504,953  (  546,842,112 rd   +    54,662,841 wr)
+==2837060== LL misses:            747,600  (       66,749 rd   +       680,851 wr)
+==2837060== LL miss rate:             0.0% (          0.0%     +           0.0%  )
+==2837062== I   refs:      22,618,794,597
+==2837062== I1  misses:        38,905,806
+==2837062== LLi misses:            21,924
+==2837062== I1  miss rate:           0.17%
+==2837062== LLi miss rate:           0.00%
+==2837062== 
+==2837062== D   refs:      12,243,129,689  (8,944,942,873 rd   + 3,298,186,816 wr)
+==2837062== D1  misses:       557,266,270  (  502,890,800 rd   +    54,375,470 wr)
+==2837062== LLd misses:           725,442  (       44,339 rd   +       681,103 wr)
+==2837062== D1  miss rate:            4.6% (          5.6%     +           1.6%  )
+==2837062== LLd miss rate:            0.0% (          0.0%     +           0.0%  )
+==2837062== 
+==2837062== LL refs:          596,172,076  (  541,796,606 rd   +    54,375,470 wr)
+==2837062== LL misses:            747,366  (       66,263 rd   +       681,103 wr)
+==2837062== LL miss rate:             0.0% (          0.0%     +           0.0%  )
+==2837061== I   refs:      22,947,028,772
+==2837061== I1  misses:        43,126,205
+==2837061== LLi misses:            22,072
+==2837061== I1  miss rate:           0.19%
+==2837061== LLi miss rate:           0.00%
+==2837061== 
+==2837061== D   refs:      12,395,713,235  (9,058,729,926 rd   + 3,336,983,309 wr)
+==2837061== D1  misses:       558,206,996  (  503,506,000 rd   +    54,700,996 wr)
+==2837061== LLd misses:           724,050  (       44,156 rd   +       679,894 wr)
+==2837061== D1  miss rate:            4.5% (          5.6%     +           1.6%  )
+==2837061== LLd miss rate:            0.0% (          0.0%     +           0.0%  )
+==2837061== 
+==2837061== LL refs:          601,333,201  (  546,632,205 rd   +    54,700,996 wr)
+==2837061== LL misses:            746,122  (       66,228 rd   +       679,894 wr)
+==2837061== LL miss rate:             0.0% (          0.0%     +           0.0%  )
+==2837059== I   refs:      22,942,070,595
+==2837059== I1  misses:        48,618,944
+==2837059== LLi misses:            22,541
+==2837059== I1  miss rate:           0.21%
+==2837059== LLi miss rate:           0.00%
+==2837059== 
+==2837059== D   refs:      12,392,741,853  (9,055,212,731 rd   + 3,337,529,122 wr)
+==2837059== D1  misses:       559,490,791  (  504,441,371 rd   +    55,049,420 wr)
+==2837059== LLd misses:           872,888  (       98,528 rd   +       774,360 wr)
+==2837059== D1  miss rate:            4.5% (          5.6%     +           1.6%  )
+==2837059== LLd miss rate:            0.0% (          0.0%     +           0.0%  )
+==2837059== 
+==2837059== LL refs:          608,109,735  (  553,060,315 rd   +    55,049,420 wr)
+==2837059== LL misses:            895,429  (      121,069 rd   +       774,360 wr)
+==2837059== LL miss rate:             0.0% (          0.0%     +           0.0%  )
+==2837245== Callgrind, a call-graph generating cache profiler
+==2837245== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2837245== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837245== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 600. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837245== 
+==2837246== Callgrind, a call-graph generating cache profiler
+==2837246== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2837246== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837246== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 600. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837246== 
+==2837243== Callgrind, a call-graph generating cache profiler
+==2837243== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2837243== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837243== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 600. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837243== 
+==2837244== Callgrind, a call-graph generating cache profiler
+==2837244== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2837244== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837244== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 600. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837244== 
+==2837246== For interactive control, run 'callgrind_control -h'.
+==2837245== For interactive control, run 'callgrind_control -h'.
+==2837243== For interactive control, run 'callgrind_control -h'.
+==2837244== For interactive control, run 'callgrind_control -h'.
+==2837243== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837243==    This could cause spurious value errors to appear.
+==2837243==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837244== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837244==    This could cause spurious value errors to appear.
+==2837244==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837245== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837245==    This could cause spurious value errors to appear.
+==2837245==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837246== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837246==    This could cause spurious value errors to appear.
+==2837246==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837243== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837243== (see section Limitations in user manual)
+==2837243== NOTE: further instances of this message will not be shown
+==2837244== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837244== (see section Limitations in user manual)
+==2837244== NOTE: further instances of this message will not be shown
+==2837245== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837245== (see section Limitations in user manual)
+==2837245== NOTE: further instances of this message will not be shown
+==2837246== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837246== (see section Limitations in user manual)
+==2837246== NOTE: further instances of this message will not be shown
+==2837243== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837244== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837245== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837246== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837243== 
+==2837244== 
+==2837246== 
+==2837245== 
+==2837244== Events    : Ir
+==2837244== Collected : 4621165389
+==2837244== 
+==2837244== I   refs:      4,621,165,389
+==2837246== Events    : Ir
+==2837246== Collected : 4630776588
+==2837246== 
+==2837246== I   refs:      4,630,776,588
+==2837245== Events    : Ir
+==2837245== Collected : 4625183252
+==2837245== 
+==2837245== I   refs:      4,625,183,252
+==2837243== Events    : Ir
+==2837243== Collected : 4618693600
+==2837243== 
+==2837243== I   refs:      4,618,693,600
+==2837386== Cachegrind, a cache and branch-prediction profiler
+==2837386== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837386== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837386== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 600. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837386== 
+--2837386-- warning: L3 cache found, using its data for the LL simulation.
+==2837387== Cachegrind, a cache and branch-prediction profiler
+==2837387== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837387== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837387== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 600. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837387== 
+--2837387-- warning: L3 cache found, using its data for the LL simulation.
+==2837388== Cachegrind, a cache and branch-prediction profiler
+==2837388== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837388== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837388== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 600. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837388== 
+--2837388-- warning: L3 cache found, using its data for the LL simulation.
+==2837389== Cachegrind, a cache and branch-prediction profiler
+==2837389== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837389== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837389== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 600. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837389== 
+--2837389-- warning: L3 cache found, using its data for the LL simulation.
+==2837386== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837386==    This could cause spurious value errors to appear.
+==2837386==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837387== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837387==    This could cause spurious value errors to appear.
+==2837387==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837388== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837388==    This could cause spurious value errors to appear.
+==2837388==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837389== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837389==    This could cause spurious value errors to appear.
+==2837389==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837386== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837386== (see section Limitations in user manual)
+==2837386== NOTE: further instances of this message will not be shown
+==2837387== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837387== (see section Limitations in user manual)
+==2837387== NOTE: further instances of this message will not be shown
+==2837388== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837388== (see section Limitations in user manual)
+==2837388== NOTE: further instances of this message will not be shown
+==2837389== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837389== (see section Limitations in user manual)
+==2837389== NOTE: further instances of this message will not be shown
+==2837386== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837387== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837388== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837389== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837387== 
+==2837389== 
+==2837388== 
+==2837386== 
+==2837387== I   refs:      4,680,136,254
+==2837387== I1  misses:       13,883,564
+==2837387== LLi misses:           21,918
+==2837387== I1  miss rate:          0.30%
+==2837387== LLi miss rate:          0.00%
+==2837387== 
+==2837387== D   refs:      2,379,279,265  (1,666,516,975 rd   + 712,762,290 wr)
+==2837387== D1  misses:       91,003,773  (   80,332,311 rd   +  10,671,462 wr)
+==2837387== LLd misses:          578,221  (       44,140 rd   +     534,081 wr)
+==2837387== D1  miss rate:           3.8% (          4.8%     +         1.5%  )
+==2837387== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2837387== 
+==2837387== LL refs:         104,887,337  (   94,215,875 rd   +  10,671,462 wr)
+==2837387== LL misses:           600,139  (       66,058 rd   +     534,081 wr)
+==2837387== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==2837386== I   refs:      4,655,461,639
+==2837386== I1  misses:       16,272,969
+==2837386== LLi misses:           22,411
+==2837386== I1  miss rate:          0.35%
+==2837386== LLi miss rate:          0.00%
+==2837386== 
+==2837386== D   refs:      2,367,743,071  (1,655,767,973 rd   + 711,975,098 wr)
+==2837386== D1  misses:       92,004,800  (   81,013,280 rd   +  10,991,520 wr)
+==2837386== LLd misses:          666,850  (       76,192 rd   +     590,658 wr)
+==2837386== D1  miss rate:           3.9% (          4.9%     +         1.5%  )
+==2837386== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2837386== 
+==2837386== LL refs:         108,277,769  (   97,286,249 rd   +  10,991,520 wr)
+==2837386== LL misses:           689,261  (       98,603 rd   +     590,658 wr)
+==2837386== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==2837389== I   refs:      4,652,520,719
+==2837389== I1  misses:       13,037,824
+==2837389== LLi misses:           21,917
+==2837389== I1  miss rate:          0.28%
+==2837389== LLi miss rate:          0.00%
+==2837389== 
+==2837389== D   refs:      2,368,712,665  (1,658,370,440 rd   + 710,342,225 wr)
+==2837389== D1  misses:       91,100,444  (   80,375,832 rd   +  10,724,612 wr)
+==2837389== LLd misses:          577,122  (       44,198 rd   +     532,924 wr)
+==2837389== D1  miss rate:           3.8% (          4.8%     +         1.5%  )
+==2837389== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2837389== 
+==2837389== LL refs:         104,138,268  (   93,413,656 rd   +  10,724,612 wr)
+==2837389== LL misses:           599,039  (       66,115 rd   +     532,924 wr)
+==2837389== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==2837388== I   refs:      4,675,339,962
+==2837388== I1  misses:       14,037,227
+==2837388== LLi misses:           22,088
+==2837388== I1  miss rate:          0.30%
+==2837388== LLi miss rate:          0.00%
+==2837388== 
+==2837388== D   refs:      2,376,875,880  (1,664,795,537 rd   + 712,080,343 wr)
+==2837388== D1  misses:       91,157,286  (   80,413,618 rd   +  10,743,668 wr)
+==2837388== LLd misses:          578,458  (       44,066 rd   +     534,392 wr)
+==2837388== D1  miss rate:           3.8% (          4.8%     +         1.5%  )
+==2837388== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2837388== 
+==2837388== LL refs:         105,194,513  (   94,450,845 rd   +  10,743,668 wr)
+==2837388== LL misses:           600,546  (       66,154 rd   +     534,392 wr)
+==2837388== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==2837498== Callgrind, a call-graph generating cache profiler
+==2837498== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2837498== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837498== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 800. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837498== 
+==2837499== Callgrind, a call-graph generating cache profiler
+==2837499== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2837499== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837499== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 800. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837499== 
+==2837500== Callgrind, a call-graph generating cache profiler
+==2837500== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2837500== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837500== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 800. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837500== 
+==2837501== Callgrind, a call-graph generating cache profiler
+==2837501== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2837501== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837501== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 800. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837501== 
+==2837500== For interactive control, run 'callgrind_control -h'.
+==2837501== For interactive control, run 'callgrind_control -h'.
+==2837498== For interactive control, run 'callgrind_control -h'.
+==2837499== For interactive control, run 'callgrind_control -h'.
+==2837499== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837499==    This could cause spurious value errors to appear.
+==2837499==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837498== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837498==    This could cause spurious value errors to appear.
+==2837498==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837500== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837500==    This could cause spurious value errors to appear.
+==2837500==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837501== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837501==    This could cause spurious value errors to appear.
+==2837501==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837498== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837498== (see section Limitations in user manual)
+==2837498== NOTE: further instances of this message will not be shown
+==2837499== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837499== (see section Limitations in user manual)
+==2837499== NOTE: further instances of this message will not be shown
+==2837500== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837500== (see section Limitations in user manual)
+==2837500== NOTE: further instances of this message will not be shown
+==2837501== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837501== (see section Limitations in user manual)
+==2837501== NOTE: further instances of this message will not be shown
+==2837498== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837499== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837500== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837501== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837498== 
+==2837499== 
+==2837501== 
+==2837500== 
+==2837499== Events    : Ir
+==2837499== Collected : 4610126605
+==2837499== 
+==2837499== I   refs:      4,610,126,605
+==2837501== Events    : Ir
+==2837501== Collected : 4625011493
+==2837501== 
+==2837501== I   refs:      4,625,011,493
+==2837500== Events    : Ir
+==2837500== Collected : 4632997975
+==2837500== 
+==2837500== I   refs:      4,632,997,975
+==2837498== Events    : Ir
+==2837498== Collected : 4629668680
+==2837498== 
+==2837498== I   refs:      4,629,668,680
+==2837588== Cachegrind, a cache and branch-prediction profiler
+==2837588== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837588== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837588== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 800. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837588== 
+--2837588-- warning: L3 cache found, using its data for the LL simulation.
+==2837589== Cachegrind, a cache and branch-prediction profiler
+==2837589== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837589== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837589== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 800. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837589== 
+--2837589-- warning: L3 cache found, using its data for the LL simulation.
+==2837590== Cachegrind, a cache and branch-prediction profiler
+==2837590== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837590== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837590== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 800. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837590== 
+--2837590-- warning: L3 cache found, using its data for the LL simulation.
+==2837591== Cachegrind, a cache and branch-prediction profiler
+==2837591== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2837591== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==2837591== Command: ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 800. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01
+==2837591== 
+--2837591-- warning: L3 cache found, using its data for the LL simulation.
+==2837588== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837588==    This could cause spurious value errors to appear.
+==2837588==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837589== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837589==    This could cause spurious value errors to appear.
+==2837589==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837590== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837590==    This could cause spurious value errors to appear.
+==2837590==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837591== Warning: noted but unhandled ioctl 0x7800 with no size/direction hints.
+==2837591==    This could cause spurious value errors to appear.
+==2837591==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==2837588== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837588== (see section Limitations in user manual)
+==2837588== NOTE: further instances of this message will not be shown
+==2837589== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837589== (see section Limitations in user manual)
+==2837589== NOTE: further instances of this message will not be shown
+==2837590== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837590== (see section Limitations in user manual)
+==2837590== NOTE: further instances of this message will not be shown
+==2837591== brk segment overflow in thread #1: can't grow to 0x4a2f000
+==2837591== (see section Limitations in user manual)
+==2837591== NOTE: further instances of this message will not be shown
+==2837588== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837589== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837590== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837591== WARNING: valgrind ignores shmget(shmflg) SHM_HUGETLB
+==2837589== 
+==2837591== 
+==2837590== 
+==2837588== 
+==2837589== I   refs:      4,700,949,725
+==2837589== I1  misses:       14,112,742
+==2837589== LLi misses:           21,883
+==2837589== I1  miss rate:          0.30%
+==2837589== LLi miss rate:          0.00%
+==2837589== 
+==2837589== D   refs:      2,389,565,432  (1,674,634,565 rd   + 714,930,867 wr)
+==2837589== D1  misses:       91,247,895  (   80,452,042 rd   +  10,795,853 wr)
+==2837589== LLd misses:          578,155  (       44,119 rd   +     534,036 wr)
+==2837589== D1  miss rate:           3.8% (          4.8%     +         1.5%  )
+==2837589== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2837589== 
+==2837589== LL refs:         105,360,637  (   94,564,784 rd   +  10,795,853 wr)
+==2837589== LL misses:           600,038  (       66,002 rd   +     534,036 wr)
+==2837589== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==2837591== I   refs:      4,637,210,553
+==2837591== I1  misses:       12,955,759
+==2837591== LLi misses:           21,936
+==2837591== I1  miss rate:          0.28%
+==2837591== LLi miss rate:          0.00%
+==2837591== 
+==2837591== D   refs:      2,361,573,727  (1,652,369,160 rd   + 709,204,567 wr)
+==2837591== D1  misses:       91,020,411  (   80,332,082 rd   +  10,688,329 wr)
+==2837591== LLd misses:          578,386  (       44,180 rd   +     534,206 wr)
+==2837591== D1  miss rate:           3.9% (          4.9%     +         1.5%  )
+==2837591== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2837591== 
+==2837591== LL refs:         103,976,170  (   93,287,841 rd   +  10,688,329 wr)
+==2837591== LL misses:           600,322  (       66,116 rd   +     534,206 wr)
+==2837591== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==2837590== I   refs:      4,661,866,178
+==2837590== I1  misses:       14,035,943
+==2837590== LLi misses:           22,086
+==2837590== I1  miss rate:          0.30%
+==2837590== LLi miss rate:          0.00%
+==2837590== 
+==2837590== D   refs:      2,370,895,276  (1,659,517,781 rd   + 711,377,495 wr)
+==2837590== D1  misses:       91,077,111  (   80,338,877 rd   +  10,738,234 wr)
+==2837590== LLd misses:          578,721  (       44,217 rd   +     534,504 wr)
+==2837590== D1  miss rate:           3.8% (          4.8%     +         1.5%  )
+==2837590== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2837590== 
+==2837590== LL refs:         105,113,054  (   94,374,820 rd   +  10,738,234 wr)
+==2837590== LL misses:           600,807  (       66,303 rd   +     534,504 wr)
+==2837590== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==2837588== I   refs:      4,671,211,954
+==2837588== I1  misses:       16,193,954
+==2837588== LLi misses:           22,403
+==2837588== I1  miss rate:          0.35%
+==2837588== LLi miss rate:          0.00%
+==2837588== 
+==2837588== D   refs:      2,375,570,952  (1,661,870,936 rd   + 713,700,016 wr)
+==2837588== D1  misses:       91,843,742  (   80,874,136 rd   +  10,969,606 wr)
+==2837588== LLd misses:          665,634  (       76,219 rd   +     589,415 wr)
+==2837588== D1  miss rate:           3.9% (          4.9%     +         1.5%  )
+==2837588== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==2837588== 
+==2837588== LL refs:         108,037,696  (   97,068,090 rd   +  10,969,606 wr)
+==2837588== LL misses:           688,037  (       98,622 rd   +     589,415 wr)
+==2837588== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==
+||
+|| Execution of ert in slurm batch script complete.
+||
+==

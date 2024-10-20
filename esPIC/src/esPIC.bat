@@ -45,9 +45,62 @@ echo "||"
 echo "|| Begin Execution of ert in slurm batch script."
 echo "||"
 echo "=="
-#mpirun -n 4 valgrind --tool=callgrind  ./esPIC -nPEx 2 -nPEy 2 -nCellx 3 -nCelly 3 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.03 -dt .01 > ttycall.out
+rm esPIC
+mpicxx -g esPIC.cpp -o esPIC
+
+rm run_2b2pros_10b10cell_400flux/cachegrind.out*
+rm run_2b2pros_100b100cell_400flux/cachegrind.out*
+rm run_2b2pros_50b50cell_400flux/cachegrind.out*
+rm run_2b2pros_50b50cell_600flux/cachegrind.out*
+rm run_2b2pros_50b50cell_800flux/cachegrind.out*
+
+rm run_2b2pros_10b10cell_400flux/callgrind.out*
+rm run_2b2pros_100b100cell_400flux/callgrind.out*
+rm run_2b2pros_50b50cell_400flux/callgrind.out*
+rm run_2b2pros_50b50cell_600flux/callgrind.out*
+rm run_2b2pros_50b50cell_800flux/callgrind.out*
+
+
 mpirun -n 4 valgrind --tool=callgrind  ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01 > ttycall.out
 mpirun -n 4 valgrind --tool=cachegrind  ./esPIC -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01 > ttycahce.out
+cp cachegrind.out* run_2b2pros_10b10cell_400flux
+cp callgrind.out* run_2b2pros_10b10cell_400flux
+rm cachegrind.out*
+rm callgrind.out*
+
+
+mpirun -n 4 valgrind --tool=callgrind  ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01 > ttycall.out
+mpirun -n 4 valgrind --tool=cachegrind  ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01 > ttycahce.out
+cp cachegrind.out* run_2b2pros_50b50cell_400flux
+cp callgrind.out* run_2b2pros_50b50cell_400flux
+rm cachegrind.out*
+rm callgrind.out*
+
+
+mpirun -n 4 valgrind --tool=callgrind  ./esPIC -nPEx 2 -nPEy 2 -nCellx 100 -nCelly 100 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01 > ttycall.out
+mpirun -n 4 valgrind --tool=cachegrind  ./esPIC -nPEx 2 -nPEy 2 -nCellx 100 -nCelly 100 -flux 400. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01 > ttycahce.out
+cp cachegrind.out* run_2b2pros_100b100cell_400flux
+cp callgrind.out* run_2b2pros_100b100cell_400flux
+rm cachegrind.out*
+rm callgrind.out*
+
+
+
+mpirun -n 4 valgrind --tool=callgrind  ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 600. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01 > ttycall.out
+mpirun -n 4 valgrind --tool=cachegrind  ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 600. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01 > ttycahce.out
+cp cachegrind.out* run_2b2pros_50b50cell_600flux
+cp callgrind.out* run_2b2pros_50b50cell_600flux
+rm cachegrind.out*
+rm callgrind.out*
+
+mpirun -n 4 valgrind --tool=callgrind  ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 800. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01 > ttycall.out
+mpirun -n 4 valgrind --tool=cachegrind  ./esPIC -nPEx 2 -nPEy 2 -nCellx 50 -nCelly 50 -flux 800. -vx_bdy 1. -npHat 80. -tEnd 0.1 -dt .01 > ttycahce.out
+cp cachegrind.out* run_2b2pros_50b50cell_800flux
+cp callgrind.out* run_2b2pros_50b50cell_800flux
+rm cachegrind.out*
+rm callgrind.out*
+
+rm *.plt
 
 echo "=="
 echo "||"
